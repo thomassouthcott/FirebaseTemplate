@@ -1,0 +1,15 @@
+<resources>
+    <string name="app_name">FirebaseTemplate</string>
+
+    <string name="title_email">Email</string>
+    <string name="title_password">Password</string>
+    <string name="title_repeat_password">Repeat Password</string>
+    <string name="title_username">Username</string>
+    <string name="title_profile_picture">Profile Picture</string>
+    <string name="title_or">Or</string>
+    <string name="button_register">Register</string>
+    <string name="button_login">Login</string>
+    <string name="button_save">Save</string>
+    <string name="button_logout">Logout</string>
+    <string name="button_choose_image">Choose Image</string>
+</resources>

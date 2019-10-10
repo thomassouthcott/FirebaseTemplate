@@ -1,0 +1,97 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    tools:context=".activities.profile.ProfileActivity">
+
+    <Button
+        android:id="@+id/btn_logout_Profile"
+        android:layout_width="400dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="16dp"
+        android:layout_marginEnd="16dp"
+        android:layout_marginBottom="16dp"
+        android:text="@string/button_logout"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/fab_choose_image_Profile" />
+
+    <EditText
+        android:id="@+id/edit_email_Profile"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="8dp"
+        android:layout_marginEnd="16dp"
+        android:ems="10"
+        android:enabled="false"
+        android:inputType="textPersonName"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/img_profile_picture_Profile"
+        app:layout_constraintTop_toBottomOf="@+id/edit_username_Profile" />
+
+    <EditText
+        android:id="@+id/edit_username_Profile"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="8dp"
+        android:layout_marginEnd="16dp"
+        android:ems="10"
+        android:inputType="textPersonName"
+        app:layout_constraintEnd_toStartOf="@+id/btn_save_Profile"
+        app:layout_constraintStart_toEndOf="@+id/img_profile_picture_Profile"
+        app:layout_constraintTop_toBottomOf="@+id/title_username_Profile" />
+
+    <ImageButton
+        android:id="@+id/btn_save_Profile"
+        style="@android:style/Widget.Material.ImageButton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="16dp"
+        android:background="@android:color/transparent"
+        android:scaleType="center"
+        app:layout_constraintBottom_toBottomOf="@+id/edit_username_Profile"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/edit_username_Profile"
+        app:srcCompat="@drawable/ic_save_black_24dp" />
+
+    <ImageView
+        android:id="@+id/img_profile_picture_Profile"
+        android:layout_width="125dp"
+        android:layout_height="125dp"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="24dp"
+        android:cropToPadding="false"
+        android:padding="0dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/ic_person_black_200dp" />
+
+    <TextView
+        android:id="@+id/title_username_Profile"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="16dp"
+        android:text="@string/title_username"
+        app:layout_constraintStart_toEndOf="@+id/img_profile_picture_Profile"
+        app:layout_constraintTop_toTopOf="@+id/img_profile_picture_Profile" />
+
+    <com.google.android.material.floatingactionbutton.FloatingActionButton
+        android:id="@+id/fab_choose_image_Profile"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:clickable="true"
+        app:fabSize="mini"
+        app:layout_constraintBottom_toBottomOf="@+id/img_profile_picture_Profile"
+        app:layout_constraintEnd_toEndOf="@+id/img_profile_picture_Profile"
+        app:layout_constraintStart_toEndOf="@+id/img_profile_picture_Profile"
+        app:layout_constraintTop_toBottomOf="@+id/img_profile_picture_Profile"
+        app:layout_constraintVertical_bias="0.792"
+        app:srcCompat="@drawable/ic_edit_black_24dp"
+        app:useCompatPadding="true" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>
